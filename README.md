@@ -31,4 +31,4 @@ public class SoftwareEngineer {
 ## 📈 GitHub Stats
 
 ![PlutoWu's GitHub stats](https://github-readme-stats.vercel.app/api?username=PlutoWu-Cn&count_private=true&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=PlutoWu-Cn&layout=compact&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=PlutoWu-Cn&layout=compact&theme=radical&hide=css,html)
