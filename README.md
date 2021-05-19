@@ -24,6 +24,7 @@ public class SoftwareEngineer {
 
 ![](https://img.shields.io/badge/OS-Linux-green.svg)
 ![](https://img.shields.io/badge/Editor-IDEA-green.svg)
+![](https://img.shields.io/badge/Editor-GoLand-green.svg)
 ![](https://img.shields.io/badge/Language-Java-green.svg)
 ![](https://img.shields.io/badge/Language-GoLang-green.svg)
 ![](https://img.shields.io/badge/Language-JavaScript-green.svg)
