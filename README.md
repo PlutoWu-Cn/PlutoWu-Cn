@@ -2,21 +2,28 @@
 
 [![](https://img.shields.io/badge/blog-@PlutoWu-blue.svg)](https://plutowu.top)
 
-```java
-public class SoftwareEngineer {
-    
-    String name;
-    String chineseName;
-    String role;
-    
-    public SoftwareEngineer(String name){}
-    
-    public static void main(String[] args){
-        SoftwareEngineer me = new Puppy( "PlutoWu" );
-        SoftwareEngineer.setChineseName("Shiyuan Wu");
-        SoftwareEngineer.setRole("Java SoftwareEngineer");
-        System.out.println(me); 
-   }
+```go
+type resume struct {
+	Name        string `info:"name" doc:"PlutoWu"`
+	Sex         string `info:"sex"  doc:"Male"`
+	Role        string `info:"role" doc:"SoftwareEngineer"`
+	ChineseName string `info:"chineseName"  doc:"Shiyuan Wu"`
+}
+
+func findTag(str interface{}) {
+	t := reflect.TypeOf(str).Elem()
+
+	for i := 0; i < t.NumField(); i++ {
+		taginfo := t.Field(i).Tag.Get("info")
+		tagdoc := t.Field(i).Tag.Get("doc")
+		fmt.Println("info:", taginfo, "doc:", tagdoc)
+	}
+}
+
+func main() {
+	var re resume
+
+	findTag(&re)
 }
 ```
 
